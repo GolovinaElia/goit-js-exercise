@@ -12,3 +12,10 @@
 // Вызов isAdult(8) возвращает false.
 // Вызов isAdult(37) возвращает true.
 
+function isAdult(age) {
+  // Пиши код ниже этой строки
+  const passed = age >= 18;
+
+  // Пиши код выше этой строки
+  return passed;
+}
