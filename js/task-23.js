@@ -21,3 +21,9 @@
 // Вызов isNumberNotInRange(20, 50, 24) возвращает false.
 // Вызов isNumberNotInRange(20, 50, 76) возвращает true.
 
+function isNumberNotInRange(start, end, number) {
+    const isInRange = number >= start && number <= end;
+    const isNotInRange = !isInRange; // Дополни эту строку
+
+    return isNotInRange;
+}
