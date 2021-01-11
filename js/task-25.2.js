@@ -25,13 +25,34 @@
 
 function getCommonElements(array1, array2) {
   // Пиши код ниже этой строки
+  // let newArr = [];
+  // for (let i = 0; i < array1.length; i++) {
+  //   const arr = array1[i];
+  //   for (let k = 0; k < array2.length; k++) {
+  //     if (arr === array2[k]) {
+  //    newArr.push(arr);
+  //   }
+  // }
+  // }
+  // return newArr;
+// let newArr = [];
+//   for (const arr of array1) {
+//     for (const arr1 of array2) {
+//       if (arr === arr1) {
+//      newArr.push(arr);
+//     }
+//   }
+//   }
+//   return newArr;
+// } 
   let newArr = [];
-    for (let i = 0; i < array1.length; i += 1) {
-        array1.includes(array2);
+  for (const arr of array1) {
+      if (array2.includes(arr)) {
+     newArr.push(arr);
+    }
   }
-  newArr.push();
-    
-  
-  // Пиши код выше этой строки
+  return newArr;
 }
+  // Пиши код выше этой строки 
 console.log(getCommonElements([1, 2, 3], [2, 4]));
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
