@@ -11,6 +11,6 @@
 // const number = Number(value);
 // console.log(number);
 
-const blockWidth = '300px';
-const width = Number.parseInt(blockWidth);
-console.log(width);
+const blockWidth = "300px"
+const width = Number.parseInt(blockWidth)
+console.log(width)
