@@ -75,7 +75,26 @@
 // const date = new Date();
 // console.log(date);
 
-let i;
-for (i = 0; i < 10; i++) {
-    setTimeout(() => console.log(i), 0);
+// let i;
+// for (i = 0; i < 10; i++) {
+//     setTimeout(() => console.log(i), 0);
+// }
+
+// const a = {};
+// const b = { key: 'b' };
+// const c = { key: 'c' };
+
+// a[b] = 1;
+// a[c] = 2;
+// console.log(a[b]);
+
+// let x;
+
+// true || (x = 1);
+
+// console.log(x);
+
+class Student {
+  constructor (){}
 }
+console.log(typeof Student);
