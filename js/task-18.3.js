@@ -1,7 +1,7 @@
 // Задание
-// Напиши функцию getProductPrice(productName) которая принимает один параметр productName - название продукта.
-// Функция ищет объект продукта с таким именем(свойство name) в массиве products и возвращает его цену
-//     (свойство price).Если продукт с таким названием не найден, функция должна возвращать null.
+// Напиши функцию getProductPrice(productName) которая принимает один параметр productName - название продукта. 
+// Функция ищет объект продукта с таким именем (свойство name) в массиве products и возвращает его цену (свойство price). 
+// Если продукт с таким названием не найден, функция должна возвращать null.
 
 // Тесты
 // Объявлена функция getProductPrice(productName).
@@ -11,24 +11,14 @@
 // Вызов getProductPrice("Droid") возвращает 400.
 // Вызов getProductPrice("Engine") возвращает null.
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-]
-
 function getProductPrice(productName) {
-  for (const product of products) {
+  // Change code below this line
+   for (const product of products) {
     if (product.name === productName) {
-      return console.log(product.price)
+      return (product.price)
     }
   }
-  return console.log(products.price ? product.price : null)
+  return (products.price ? product.price : null)
+  
+  // Change code above this line
 }
-
-getProductPrice("Radar")
-getProductPrice("Grip")
-getProductPrice("Scanner")
-getProductPrice("Droid")
-getProductPrice("Engine")
