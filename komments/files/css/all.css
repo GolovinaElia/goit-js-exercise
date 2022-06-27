@@ -1,0 +1,128 @@
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.comments-wrapper {
+    max-width: 636px;
+    padding: 20px 0 0 21px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: scale-down;
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.comments-form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.comments__user-avatar {
+    width: 22px;
+    height: 22px;
+    background-color: #c4c4c4;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.comments__input {
+    width: 90%;
+    height: 25px;
+    padding: 7px 40px 7px 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: inherit;
+    border: none;
+    resize: none;
+    margin-left: 20px;
+}
+
+.comments__input:focus-visible {
+    outline: none
+}
+
+.comments__input::-webkit-input-placeholder, .comments__input::-moz-placeholder {
+    color: #b0b0b0
+}
+
+.comments-form {
+    margin-bottom: 33px
+}
+
+.comments-form--hidden {
+    display: none
+}
+
+.comments-form__button {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    outline: none;
+}
+
+.comments-item {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 20px
+}
+
+.comments-item:last-child {
+    margin-bottom: 0
+}
+
+.comments-item__user-avatar {
+    background: #c4c4c4;
+    border-radius: 5px;
+    margin-right: 31px
+}
+
+.comments-item__username {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px
+}
+
+.comments-item__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.comments-item__wrapper {
+    width: 100%
+}
+
+.comments-form__answer {
+    height: 35px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.comments-form__answer--hidden {
+    display: none
+}

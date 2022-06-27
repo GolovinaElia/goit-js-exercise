@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="files/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="comments-wrapper">
+    <div class="comments-form">
+        <div class="comments__user-avatar">
+            <img src="files/img/icon-photo.svg" width="19" alt="icon: camera">
+        </div>
+        <textarea class="comments__input" cols="30" rows="10" placeholder="Tulis komen"
+                  required></textarea>
+        <button class="button comments-form__button" type="button">
+            <img src="files/img/icon-send.svg" width="21" alt="icon: send button">
+        </button>
+    </div>
+            <div class="comments-form__answer comments-form__answer--hidden form__answer">
+                <p class="form-answer__text"> Terima kasih, seorang moderator sedang meninjau pesan Anda</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const addComment = document.querySelector('.comments-form__button');
+        const commentForm = document.querySelector('.comments-form');
+        const commentFormSubmitted = document.querySelector('.comments-form__answer');
+    
+        addComment.addEventListener('click',(e)=>{
+            commentForm.classList.toggle('comments-form--hidden')
+            commentFormSubmitted.classList.toggle('comments-form__answer--hidden')
+        });
+    </script>  
+</body>
+</html>

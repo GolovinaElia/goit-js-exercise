@@ -28,3 +28,4 @@ const apartment = {
   price: 2153,
   tags: ['premium', 'promoted', 'top'],
 };
+
