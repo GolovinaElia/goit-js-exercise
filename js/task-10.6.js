@@ -34,3 +34,8 @@
 // Значение переменной planetsLengths это массив [5, 4, 6, 6].
 // Для перебора массива планет использован метод map().
 
+const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
+// Пиши код ниже этой строки
+const planetsLengths = planets.map(planet => {
+    return planet.split('').length
+});
