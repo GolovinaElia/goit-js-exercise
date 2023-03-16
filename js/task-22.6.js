@@ -1,4 +1,4 @@
-// Задача. Пользователи с другом
+// Задача. Активные пользователи
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
 
 // [
@@ -74,18 +74,18 @@
 //   }
 // ]
 // Задание
-// Дополни функцию getUsersWithFriend(users, friendName) так, чтобы она возвращала массив пользователей у которых есть друг с именем в параметре friendName. Массив друзей пользователя хранится в свойстве friends.
+// Дополни функцию getActiveUsers(users) так, чтобы она возвращала массив активных
+// пользователей, значение свойства isActive которых true.
 
 // Тесты
-// Объявлена переменная getUsersWithFriend.
-// Переменной getUsersWithFriend присвоена стрелочная функция с параметрами (users, friendName).
+// Объявлена переменная getActiveUsers.Переменной getActiveUsers
+//  присвоена стрелочная функция с параметром users.
 // Для перебора параметра users используется метод filter().
-// Если значение параметра friendName это строка 'Briana Decker', функция возвращает массив объектов пользователей с именами Sharlene Bush и Sheree Anthony.
-// Если значение параметра friendName это строка 'Goldie Gentry', функция возвращает массив объектов пользователей с именами Elma Head и Sheree Anthony.
-// Если значение параметра friendName это строка 'Adrian Cross', функция возвращает пустой массив.
+// Вызов функции с указанным массивом пользователей возвращает
+//  массив объектов пользователей с именами Sharlene Bush, Elma Head, Carey Barr и Sheree Anthony.
 // Вызов функции со случайными, но валидными аргументами, возвращает правильное значение.
 
 
-const getUsersWithFriend = (users, friendName) => {
-   return users.filter((user) => user.friends.includes(friendName));
+const getActiveUsers = (users) => {
+   return users.filter((user) => user.isActive); 
 };

@@ -1,4 +1,4 @@
-// Задача. Пользователи с другом
+// Задача. Список друзей
 // Этот массив объектов мы будем передавать в параметр users при вызове функции из задания.
 
 // [
@@ -74,18 +74,24 @@
 //   }
 // ]
 // Задание
-// Дополни функцию getUsersWithFriend(users, friendName) так, чтобы она возвращала массив пользователей у которых есть друг с именем в параметре friendName. Массив друзей пользователя хранится в свойстве friends.
+// Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех пользователей(свойство friends).
+//  У нескольких пользователей могут быть одинаковые друзья, сделай так чтобы возвращаемый массив не содержал повторений.
 
 // Тесты
-// Объявлена переменная getUsersWithFriend.
-// Переменной getUsersWithFriend присвоена стрелочная функция с параметрами (users, friendName).
-// Для перебора параметра users используется метод filter().
-// Если значение параметра friendName это строка 'Briana Decker', функция возвращает массив объектов пользователей с именами Sharlene Bush и Sheree Anthony.
-// Если значение параметра friendName это строка 'Goldie Gentry', функция возвращает массив объектов пользователей с именами Elma Head и Sheree Anthony.
-// Если значение параметра friendName это строка 'Adrian Cross', функция возвращает пустой массив.
+// Объявлена переменная getFriends.
+// Переменной getFriends присвоена стрелочная функция с параметром(users).
+// Вызов функции с указанным массивом пользователей возвращает массив['Sharron Pace', 'Briana Decker',
+//   'Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner', 'Goldie Gentry', 'Aisha Tran',
+//   'Jordan Sampson', 'Eddie Strong', 'Jacklyn Lucas', 'Linda Chapman'].
 // Вызов функции со случайными, но валидными аргументами, возвращает правильное значение.
 
-
-const getUsersWithFriend = (users, friendName) => {
-   return users.filter((user) => user.friends.includes(friendName));
+const getFriends = (users) => {
+     return users
+    .reduce((acc, user) => {
+    acc.push(...user.friends)
+    return acc;
+    }, [])
+    .filter((user, index, arr) => arr.indexOf(user) === index)
 };
+
+console.log(getFriends(users));
